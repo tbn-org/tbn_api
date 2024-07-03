@@ -15,6 +15,33 @@
     ]
   },
   "context": {
+
+    "stg": {
+      "env": "stg",
+      "table_name": "mbs_hpc_curation_preset_config",
+      "lambda_name": "LambdaFunctionstg",
+      "api_name": "APIGatewaystg",
+      "role_name": "LambdaExecutionRolestg"
+    },
+    "prod": {
+      "env": "prod",
+      "table_name": "mbs_hpc_curation_preset_config",
+      "lambda_name": "LambdaFunctionProd",
+      "api_name": "APIGatewayProd",
+      "role_name": "LambdaExecutionRoleProd"
+    },
+
+    "dev": {
+      "env": "dev",
+      "table_name": "mbs_hpc_curation_preset_config",
+      "lambda_name": "LambdaFunctiondev",
+      "api_name": "APIGatewaydev",
+      "role_name": "LambdaExecutionRoledev"
+    },
+
+
+
+
     "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
     "@aws-cdk/core:checkSecretUsage": true,
     "@aws-cdk/core:target-partitions": [

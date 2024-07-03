@@ -55,4 +55,10 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
+CDK_ENV=dev cdk deploy
+CDK_ENV=stg cdk deploy
+CDK_ENV=prod cdk deploy
+
 Enjoy!
+
+
